@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://ckixq8ripp4uq"]
+
+[ext_resource type="Script" uid="uid://vf6ud8u05wwl" path="res://fill_inspector.gd" id="1_xcecc"]
+[ext_resource type="Texture2D" uid="uid://qelw00w0bm00" path="res://base.png" id="2_25y2w"]
+
+[node name="inspectorWindow" type="Control" unique_id=763975611]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -380.0
+offset_bottom = -370.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xcecc")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=983810131]
+layout_mode = 0
+offset_right = 900.0
+offset_bottom = 350.0
+texture = ExtResource("2_25y2w")
+
+[node name="BoxContainer" type="BoxContainer" parent="." unique_id=1948964971]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 885.0
+offset_bottom = 340.0
+theme_override_constants/separation = 150

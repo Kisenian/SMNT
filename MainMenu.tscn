@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://cifj54q8fw6gx"]
+
+[ext_resource type="Script" uid="uid://dbhrs2wr4fi1c" path="res://main_menu.gd" id="1_i26rj"]
+
+[node name="Control" type="Control" unique_id=1830954258]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_i26rj")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=346556341]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0, 0, 0, 1)
+
+[node name="Button2" type="Button" parent="." unique_id=1076299445]
+visible = false
+layout_mode = 0
+offset_left = 764.0
+offset_top = 464.0
+offset_right = 971.0
+offset_bottom = 515.0
+text = "Admin"
+
+[node name="Button" type="Button" parent="." unique_id=1710518367]
+visible = false
+layout_mode = 0
+offset_left = 317.0
+offset_top = 459.0
+offset_right = 524.0
+offset_bottom = 510.0
+text = "User"
+
+[node name="Label" type="Label" parent="." unique_id=677604072]
+visible = false
+layout_mode = 0
+offset_left = 325.0
+offset_top = 172.0
+offset_right = 995.0
+offset_bottom = 263.0
+theme_override_font_sizes/font_size = 40
+text = "С возвращением!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Start" type="Button" parent="." unique_id=2115254929]
+layout_mode = 0
+offset_left = 743.0
+offset_top = 327.0
+offset_right = 1131.0
+offset_bottom = 376.0
+text = "Начать игру"
+
+[node name="Quit" type="Button" parent="." unique_id=834158341]
+layout_mode = 0
+offset_left = 739.0
+offset_top = 455.0
+offset_right = 1127.0
+offset_bottom = 504.0
+text = "Выход"

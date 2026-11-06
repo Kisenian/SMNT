@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://qxq8n8qh8ptv"]
+
+[node name="Boo" type="ColorRect" unique_id=995896046]
+offset_right = 319.0
+offset_bottom = 181.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="." unique_id=282036169]
+layout_mode = 0
+offset_left = 116.0
+offset_top = 60.0
+offset_right = 156.0
+offset_bottom = 83.0
+text = "БУ"

@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://c5vlansrf8a7b"]
+
+[ext_resource type="Texture2D" uid="uid://hh5jbw7uqdbu" path="res://images/photo1.jpg" id="1_20sgo"]
+[ext_resource type="StyleBox" uid="uid://dq8p2vylg8umu" path="res://ButtonSettings.tres" id="2_i6hma"]
+[ext_resource type="StyleBox" uid="uid://bfsmkwpe1674l" path="res://button_h_or_p.tres" id="3_iqmc3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i6hma"]
+bg_color = Color(0, 0, 0, 0)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.5019608, 0.89411765, 0.5176471, 1)
+
+[sub_resource type="Animation" id="Animation_rbclq"]
+resource_name = "Opening"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 3.605004),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_jsn3d"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_iqmc3"]
+_data = {
+&"Opening": SubResource("Animation_rbclq"),
+&"RESET": SubResource("Animation_jsn3d")
+}
+
+[node name="Control" type="Control" unique_id=672334880]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -970.0
+offset_bottom = -295.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ImageDisplay" type="TextureRect" parent="." unique_id=525214773]
+layout_mode = 0
+offset_right = 310.0
+offset_bottom = 440.0
+texture = ExtResource("1_20sgo")
+expand_mode = 1
+
+[node name="TextureRect" type="Panel" parent="." unique_id=278663293]
+layout_mode = 0
+offset_right = 310.0
+offset_bottom = 440.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_i6hma")
+
+[node name="Close" type="Button" parent="." unique_id=632783801]
+layout_mode = 0
+offset_left = 265.0
+offset_right = 310.0
+offset_bottom = 45.0
+theme_override_styles/normal = ExtResource("2_i6hma")
+theme_override_styles/pressed = ExtResource("3_iqmc3")
+theme_override_styles/hover = ExtResource("3_iqmc3")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=299794566]
+libraries/ = SubResource("AnimationLibrary_iqmc3")

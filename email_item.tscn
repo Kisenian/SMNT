@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://de8lbvask4yyt"]
+
+[ext_resource type="Script" uid="uid://kw7rsafq5rls" path="res://fill_mail.gd" id="1_asrus"]
+[ext_resource type="FontFile" uid="uid://brqo5njjq4imd" path="res://Tiny5-Regular.ttf" id="2_4yma8"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6f7av"]
+font = ExtResource("2_4yma8")
+font_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_r8dgl"]
+font = ExtResource("2_4yma8")
+font_size = 20
+
+[node name="EmailItem" type="Control" unique_id=1839454909]
+custom_minimum_size = Vector2(180, 10)
+layout_mode = 3
+anchor_right = 0.78125
+anchor_bottom = 0.055555556
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_asrus")
+metadata/_edit_use_anchors_ = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1527439914]
+layout_mode = 1
+offset_right = 174.99998
+offset_bottom = 179.00002
+scale = Vector2(0.88000005, 0.9999998)
+theme_override_constants/separation = 35
+
+[node name="TitleLabel" type="Label" parent="HBoxContainer" unique_id=569325747]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 5
+text = "Тут тема"
+label_settings = SubResource("LabelSettings_6f7av")
+
+[node name="FromLabel" type="Label" parent="HBoxContainer" unique_id=188414467]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 5
+text = "Тут источник"
+label_settings = SubResource("LabelSettings_r8dgl")

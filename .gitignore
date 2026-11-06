@@ -1,0 +1,18 @@
+   # Godot 4+ specific ignores
+   .godot/
+   *.import
+   *.translation
+   
+   # IDE ignores
+   .vscode/
+   .idea/
+   
+   # OS specific ignores
+   .DS_Store
+   Thumbs.db
+   
+   # Export builds (НИКОГДА не загружай собранные игры в репозиторий!)
+   *.exe
+   *.app
+   *.x86_64
+   *.pck

@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://cpeqm7c1oqkeu"]
+
+[ext_resource type="Script" uid="uid://dh2vmu81xjvo0" path="res://fill_file.gd" id="1_ocnwa"]
+[ext_resource type="Texture2D" uid="uid://6cfa1v562ulj" path="res://ic_exp_green.png" id="2_ocnwa"]
+[ext_resource type="FontFile" uid="uid://brqo5njjq4imd" path="res://Tiny5-Regular.ttf" id="3_ocnwa"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_88r2x"]
+font = ExtResource("3_ocnwa")
+font_size = 20
+
+[node name="InspectorItem" type="Control" unique_id=1574100086]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ocnwa")
+
+[node name="Folder" type="TextureRect" parent="." unique_id=895907492]
+layout_mode = 0
+offset_right = 117.0
+offset_bottom = 110.0
+texture = ExtResource("2_ocnwa")
+expand_mode = 1
+
+[node name="Name" type="Label" parent="." unique_id=1653734521]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 109.0
+offset_right = 102.0
+offset_bottom = 132.0
+text = "Название"
+label_settings = SubResource("LabelSettings_88r2x")
+horizontal_alignment = 1
+vertical_alignment = 1

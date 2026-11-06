@@ -1,0 +1,126 @@
+[gd_scene format=3 uid="uid://dpdqdaipex46d"]
+
+[ext_resource type="Script" uid="uid://hl5mfsqfruc2" path="res://window_email.gd" id="1_5vh3p"]
+[ext_resource type="FontFile" uid="uid://brqo5njjq4imd" path="res://Tiny5-Regular.ttf" id="3_xnvgc"]
+[ext_resource type="StyleBox" uid="uid://dq8p2vylg8umu" path="res://ButtonSettings.tres" id="4_7iisa"]
+[ext_resource type="StyleBox" uid="uid://bfsmkwpe1674l" path="res://button_h_or_p.tres" id="4_xnvgc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_je1dn"]
+font = ExtResource("3_xnvgc")
+font_size = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_je1dn"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.5019608, 0.89411765, 0.5176471, 1)
+
+[sub_resource type="Animation" id="Animation_slxwo"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnswerInput:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(480, 280)]
+}
+
+[sub_resource type="Animation" id="Animation_je1dn"]
+resource_name = "Wrong"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnswerInput:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.02, 0.04, 0.06, 0.08, 0.1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(480, 280), Vector2(470, 280), Vector2(490, 280), Vector2(470, 280), Vector2(490, 280), Vector2(480, 280)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xnvgc"]
+_data = {
+&"RESET": SubResource("Animation_slxwo"),
+&"Wrong": SubResource("Animation_je1dn")
+}
+
+[node name="EmailWindow" type="Control" unique_id=2115407984]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -5.0
+offset_bottom = 23.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5vh3p")
+
+[node name="TextureRect" type="Panel" parent="." unique_id=1080140840]
+layout_mode = 0
+offset_right = 900.0
+offset_bottom = 350.0
+theme_override_styles/panel = ExtResource("4_7iisa")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1045887418]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 23.0
+offset_right = 441.0
+offset_bottom = 332.0
+theme_override_constants/separation = 10
+
+[node name="content_label" type="Label" parent="." unique_id=384623584]
+layout_mode = 1
+offset_left = 454.0
+offset_top = 22.0
+offset_right = 838.0
+offset_bottom = 268.0
+label_settings = SubResource("LabelSettings_je1dn")
+autowrap_mode = 2
+
+[node name="AnswerInput" type="LineEdit" parent="." unique_id=1477933864]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 280.0
+offset_right = 741.0
+offset_bottom = 330.0
+theme_override_fonts/font = ExtResource("3_xnvgc")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_je1dn")
+theme_override_styles/focus = ExtResource("4_xnvgc")
+emoji_menu_enabled = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=11947048]
+libraries/ = SubResource("AnimationLibrary_xnvgc")
+
+[node name="Close" type="Button" parent="." unique_id=1462299105]
+layout_mode = 1
+offset_left = 855.0
+offset_right = 900.0
+offset_bottom = 45.0
+theme_override_styles/normal = ExtResource("4_7iisa")
+theme_override_styles/pressed = ExtResource("4_7iisa")
+theme_override_styles/hover = ExtResource("4_7iisa")
+
+[node name="SendButton" type="Button" parent="." unique_id=335202328]
+layout_mode = 0
+offset_left = 761.0
+offset_top = 280.0
+offset_right = 884.0
+offset_bottom = 330.0
+theme_override_fonts/font = ExtResource("3_xnvgc")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = ExtResource("4_7iisa")
+theme_override_styles/pressed = ExtResource("4_xnvgc")
+theme_override_styles/hover = ExtResource("4_xnvgc")
+text = "Отправить"
