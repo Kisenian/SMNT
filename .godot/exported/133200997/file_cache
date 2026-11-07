@@ -12,10 +12,10 @@ res://boo.tscn::6c3bff5a9a832edfedb8fd4c80e587d3::1793715074::res://.godot/expor
 res://ButtonSettings.tres::aa675d715aa087c4a7e81bae88e94b18::1793914662::res://.godot/exported/133200997/export-0f801f5bdeaf5a6d3b8dc2cb8b0b12a5-ButtonSettings.res
 res://days_intro.tscn::d664db3d7e89bad911d92f96313090f5::1793917206::res://.godot/exported/133200997/export-c98d0f91320be70109e1ce196f642dad-days_intro.scn
 res://db_window.tscn::25501d0ce6e24df5feecddf989b53684::1793973054::res://.godot/exported/133200997/export-54855b2d4c01b2e3a8706e7d32c2f62a-db_window.scn
-res://desktop.tscn::c29850be332dd6f5bcfc0ba7cf0b5d08::1793974100::res://.godot/exported/133200997/export-d5dc400abfdd95ecb7032dddb15402a6-desktop.scn
+res://desktop.tscn::f06dbe51e09fc56814eadcb986dc2276::1793977062::res://.godot/exported/133200997/export-d5dc400abfdd95ecb7032dddb15402a6-desktop.scn
 res://email_item.tscn::6665a0c2183134102e38bd39953dc7df::1793970540::res://.godot/exported/133200997/export-6409bc25d92b0d7ebe01baaa759423ff-email_item.scn
 res://email_window.tscn::29eaab75920f4e20080afb8e64242d5b::1793974079::res://.godot/exported/133200997/export-6f43e9ef530878ae74bee08a464b8d15-email_window.scn
-res://fonts_for_lables.tres::4d8e62f0a0bc0c37e3770d9f5606bb86::1793966145::res://.godot/exported/133200997/export-eab83b44431e2d9e601234dc87fb35f1-fonts_for_lables.res
+res://fonts_for_lables.tres::4d8e62f0a0bc0c37e3770d9f5606bb86::1793975867::res://.godot/exported/133200997/export-eab83b44431e2d9e601234dc87fb35f1-fonts_for_lables.res
 res://ImageViewer.tscn::7da7b38ca9fee02a42b4203da089e281::1793973091::res://.godot/exported/133200997/export-b290d1c07a8e7e98734bc4c5156921e0-ImageViewer.scn
 res://inspector_item.tscn::98330820b409fc1aa8af1f30d3f2e070::1793973086::res://.godot/exported/133200997/export-f2a002ef3ce8d87b9f3949007d54e5e7-inspector_item.scn
 res://inspector_window.tscn::b24525f9abc2cf2ecbc411887d85a6f6::1793897864::res://.godot/exported/133200997/export-c8420df465c2dfda9609ab8a20c4addb-inspector_window.scn

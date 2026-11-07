@@ -1,10 +1,11 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1793973091
+::res://::1793975826
 app.gd::GDScript::2541836961105224210::1793735415::0::1::::<>TextureRect<><>0<>0<><>::
 back.png::CompressedTexture2D::8851602021244449370::1793914734::1793914819::1::::<><><>0<>0<>b5a1f36ac49c4a1f5c473da8553bcf1b<>res://.godot/imported/back.png-dc81948ada94089b9c87c9a589126020.ctex::
 base.png::CompressedTexture2D::1131987536348001843::1793740525::1793740579::1::::<><><>0<>0<>cc4a22b55dbf977f33e41d671cc66c52<>res://.godot/imported/base.png-b4af6fb62ed8950f8189ff36a7b6d13b.ctex::
 boo.tscn::PackedScene::1171533324154751759::1793715074::0::1::::<><><>0<>0<><>::
 ButtonSettings.tres::StyleBoxFlat::8351368127073510340::1793914662::0::1::::<><><>0<>0<><>::
+button_h_or_p.tres::StyleBoxFlat::2775271342212097725::1793972940::0::1::::<><><>0<>0<><>::
 check_button.gd::GDScript::538326930821883302::1793715074::0::1::::<>Control<><>0<>0<><>::
 Cute Kitty Folder Icons!.jpg::CompressedTexture2D::4217061030711619386::1793715074::1793715074::1::::<><><>0<>0<>208b3b39284f1d109b480f9e2b05342b<>res://.godot/imported/Cute Kitty Folder Icons!.jpg-5517348120fe7716fc53140853bf2932.ctex::
 CutsceneScript.gd::GDScript::2848560662897215125::1793917206::0::1::::<>ColorRect<><>0<>0<><>::
@@ -12,14 +13,15 @@ database.json::JSON::-1::1793971641::0::1::::<><><>0<>0<><>::
 days_intro.tscn::PackedScene::5230884738358308198::1793917206::0::1::::<><><>0<>0<><>::uid://bgt4m35qfc4u0::::res://CutsceneScript.gd
 db_window.tscn::PackedScene::4672016240235192587::1793973054::0::1::::<><><>0<>0<><>::uid://nu62vyi4ygia::::res://window_database.gd<>uid://brqo5njjq4imd::::res://Tiny5-Regular.ttf<>uid://qelw00w0bm00::::res://base.png<>uid://dq8p2vylg8umu::::res://ButtonSettings.tres<>uid://bfsmkwpe1674l::::res://button_h_or_p.tres<>uid://dy52dgbjliiyq::::res://ic_refresh.png
 desktop.gd::GDScript::7177797551984123087::1793913815::0::1::::<>Control<><>0<>0<><>::
-desktop.tscn::PackedScene::3131934646165558466::1793973088::0::1::::<><><>0<>0<><>::uid://dai8jog5fk8g6::::res://desktop.gd<>uid://dkb837b7rwwak::::res://ic_trash.png<>uid://da0qvvmdab4en::::res://notification_item.tscn<>uid://dw5odkk2i03kq::::res://fonts_for_lables.tres<>uid://brqo5njjq4imd::::res://Tiny5-Regular.ttf<>uid://dyd1ueod7k86i::::res://back.png<>uid://dbiitjke2lq6p::::res://ic_exp.png<>uid://chopx1v4dy7ae::::res://ic_mail.png<>uid://d21ryj62xjsq0::::res://ic_db.png<>uid://ckixq8ripp4uq::::res://inspector_window.tscn<>uid://dwvtoqha3vxqk::::res://ic_hr.png<>uid://dpdqdaipex46d::::res://email_window.tscn<>uid://bchjxh8wp8jss::::res://app.gd<>uid://deec32tiwroot::::res://ic_start.png<>uid://b7tfopf0g6tlr::::res://db_window.tscn<>uid://jsjyvvourjge::::res://music/ambient_work.mp3<>uid://k7oodekfu88m::::res://SceneTime.gd<>uid://bwyhj3l17c2nc::::res://fill_the_dialogue.gd<>uid://c5vlansrf8a7b::::res://ImageViewer.tscn<>uid://dxcuw1gvkogwy::::res://image_viewer.gd<>uid://tooar2f42vti::::res://Sprite-0001.png<>uid://dq8p2vylg8umu::::res://ButtonSettings.tres<>uid://bfsmkwpe1674l::::res://button_h_or_p.tres
+desktop.tscn::PackedScene::3131934646165558466::1793974680::0::1::::<><><>0<>0<><>::uid://dai8jog5fk8g6::::res://desktop.gd<>uid://dkb837b7rwwak::::res://ic_trash.png<>uid://da0qvvmdab4en::::res://notification_item.tscn<>uid://dw5odkk2i03kq::::res://fonts_for_lables.tres<>uid://brqo5njjq4imd::::res://Tiny5-Regular.ttf<>uid://dyd1ueod7k86i::::res://back.png<>uid://dbiitjke2lq6p::::res://ic_exp.png<>uid://chopx1v4dy7ae::::res://ic_mail.png<>uid://d21ryj62xjsq0::::res://ic_db.png<>uid://ckixq8ripp4uq::::res://inspector_window.tscn<>uid://dwvtoqha3vxqk::::res://ic_hr.png<>uid://dpdqdaipex46d::::res://email_window.tscn<>uid://bchjxh8wp8jss::::res://app.gd<>uid://deec32tiwroot::::res://ic_start.png<>uid://b7tfopf0g6tlr::::res://db_window.tscn<>uid://jsjyvvourjge::::res://music/ambient_work.mp3<>uid://k7oodekfu88m::::res://SceneTime.gd<>uid://bwyhj3l17c2nc::::res://fill_the_dialogue.gd<>uid://c5vlansrf8a7b::::res://ImageViewer.tscn<>uid://dxcuw1gvkogwy::::res://image_viewer.gd<>uid://tooar2f42vti::::res://Sprite-0001.png<>uid://dq8p2vylg8umu::::res://ButtonSettings.tres<>uid://bfsmkwpe1674l::::res://button_h_or_p.tres
 email_item.tscn::PackedScene::7508812668052463723::1793970540::0::1::::<><><>0<>0<><>::uid://kw7rsafq5rls::::res://fill_mail.gd<>uid://brqo5njjq4imd::::res://Tiny5-Regular.ttf
-email_window.tscn::PackedScene::8219264681224196973::1793973055::0::1::::<><><>0<>0<><>::uid://hl5mfsqfruc2::::res://window_email.gd<>uid://brqo5njjq4imd::::res://Tiny5-Regular.ttf<>uid://dq8p2vylg8umu::::res://ButtonSettings.tres<>uid://bfsmkwpe1674l::::res://button_h_or_p.tres
+email_window.tscn::PackedScene::8219264681224196973::1793974079::0::1::::<><><>0<>0<><>::uid://hl5mfsqfruc2::::res://window_email.gd<>uid://brqo5njjq4imd::::res://Tiny5-Regular.ttf<>uid://dq8p2vylg8umu::::res://ButtonSettings.tres<>uid://bfsmkwpe1674l::::res://button_h_or_p.tres
 EventManager.gd::GDScript::644683574931126358::1793971886::0::1::::<>Node<><>0<>0<><>::
+export_presets.cfg::TextFile::-1::1793974160::0::1::::<><><>0<>0<><>::
 Files.json::JSON::-1::1793900129::0::1::::<><><>0<>0<><>::
 fill_file.gd::GDScript::7707619744938082177::1793899844::0::1::::<>Control<><>0<>0<><>::
 fill_inspector.gd::GDScript::1486205757314755599::1793899887::0::1::::<>Control<><>0<>0<><>::
-fill_mail.gd::GDScript::749278994904609244::1793715074::0::1::::<>Control<><>0<>0<><>::
+fill_mail.gd::GDScript::749278994904609244::1793973407::0::1::::<>Control<><>0<>0<><>::
 fill_the_dialogue.gd::GDScript::3980562889792604088::1793972877::0::1::::<>Control<><>0<>0<><>::
 fonts_for_lables.tres::LabelSettings::8766203880938262140::1793966145::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::4223988433222626093::1793715074::1793715074::1::::<><><>0<>0<>88cb9d8845dda3077d0267a94f2d5fa2<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
@@ -47,10 +49,9 @@ NextButton.gd::GDScript::5468810749137318053::1793715074::0::1::::<>Node<><>0<>0
 notification.gd::GDScript::2538519484642730770::1793715074::0::1::::<>Control<><>0<>0<><>::
 notification_item.tscn::PackedScene::7211881590151449073::1793973079::0::1::::<><><>0<>0<><>::uid://bcfxbsb3304cs::::res://notification.gd<>uid://dq8p2vylg8umu::::res://ButtonSettings.tres<>uid://d36jfws2c6lek::::res://ic_mail_green.png<>uid://bfsmkwpe1674l::::res://button_h_or_p.tres
 pressed.gd::GDScript::5855199556104708112::1793715074::0::1::::<>TextureRect<><>0<>0<><>::
-button_h_or_p.tres::StyleBoxFlat::2775271342212097725::1793972940::0::1::::<><><>0<>0<><>::
 SceneTime.gd::GDScript::768823727734765090::1793715074::0::1::::<>Label<><>0<>0<><>::
 Sprite-0001.png::CompressedTexture2D::1363340290451871338::1793915015::1793915417::1::::<><><>0<>0<>eab98118dbcd52f6509b3570c8e77bb8<>res://.godot/imported/Sprite-0001.png-7647bf9f8b536d839277d4b64aee9852.ctex::
-sql_parser.gd::GDScript::3386629669672447953::1793967841::0::1::::<>Node<><>0<>0<><>::
+sql_parser.gd::GDScript::3386629669672447953::1793973511::0::1::::<>Node<><>0<>0<><>::
 Tiny5-Regular.ttf::FontFile::3613565378458726659::1793715074::1793715074::1::::<><><>0<>0<>60c42d2ea952a353708d7defdce88479<>res://.godot/imported/Tiny5-Regular.ttf-343606970de0449198a2a3d5b816e368.fontdata::
 trash_window.tscn::PackedScene::6228487118520613251::1793715074::0::1::::<><><>0<>0<><>::
 WindowManager.gd::GDScript::1626352204542611311::1793724715::0::1::::<>Control<><>0<>0<><>::
@@ -148,7 +149,7 @@ LICENSE.txt::TextFile::-1::1793715078::0::1::::<><><>0<>0<><>::
 ::res://fonts/xolonium/xolonium-fonts-4.1/ttf/::1793715078
 Xolonium-Bold.ttf::FontFile::1351790065365954565::1793715078::1793715078::1::::<><><>0<>0<>20ccdb373700d0d45da9d4be5b8430cb<>res://.godot/imported/Xolonium-Bold.ttf-e6ecbd5696706865a5645a7b276056f0.fontdata::
 Xolonium-Regular.ttf::FontFile::7246835205580682620::1793715078::1793715078::1::::<><><>0<>0<>f5d7255e314d6ff09647c4b5aa3c63df<>res://.godot/imported/Xolonium-Regular.ttf-158fe38ad8ae55c8a4300421eb9c50c5.fontdata::
-::res://images/::1793973237
+::res://images/::1793973238
 photo1.jpg::CompressedTexture2D::507610219663123074::1793973237::1793973238::1::::<><><>0<>0<>50dc9ea08d4d9d6dd9b5cde15c045102<>res://.godot/imported/photo1.jpg-05ec5bbb987e63e208f3ef6402a634ca.ctex::
 ::res://music/::1793715078
 ambient_work.mp3::AudioStreamMP3::669448840398730300::1793715078::1793715078::1::::<><><>0<>0<>1f071c0b48dbf2b46e90535290550fb0<>res://.godot/imported/ambient_work.mp3-3b5ca8c323f67dedc06c0550c3669814.mp3str::

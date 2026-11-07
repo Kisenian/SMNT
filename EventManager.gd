@@ -78,7 +78,7 @@ var events = [
 			{"type": "action", 
 			 "window": "database",
 			 "active_table": "employees",
-			 "task": "Напоминаю: SELECT - FROM - WHERE. Лиланда Кейн."
+			 "task": "Напоминаю: SELECT - FROM - WHERE. Лиланд Кейн."
 			},
 			
 			{
@@ -142,7 +142,7 @@ var events = [
 			
 			{"type": "action", 
 			 "window": "database",
-			 "active_table": "employees",
+			 "active_table": "equipment",
 			 "task": "В среднем..? Чтобы посчитать среднее число просто используй AVG() вместо SUM(). Довольно легко, да?"
 			},
 			
