@@ -5,25 +5,33 @@
 
 [node name="inspectorWindow" type="Control" unique_id=763975611]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_right = -380.0
-offset_bottom = -370.0
+anchor_right = 0.703
+anchor_bottom = 0.5
+offset_right = 0.15997314
+offset_bottom = -10.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_xcecc")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=983810131]
-layout_mode = 0
+layout_mode = 1
 offset_right = 900.0
-offset_bottom = 350.0
+offset_bottom = 353.0
 texture = ExtResource("2_25y2w")
 
-[node name="BoxContainer" type="BoxContainer" parent="." unique_id=1948964971]
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=123138522]
+clip_children = 2
 layout_mode = 0
-offset_left = 15.0
-offset_top = 15.0
-offset_right = 885.0
-offset_bottom = 340.0
-theme_override_constants/separation = 150
+offset_left = 18.0
+offset_top = 20.0
+offset_right = 883.0
+offset_bottom = 333.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/scrollbar_v_separation = 20
+
+[node name="BoxContainer" type="GridContainer" parent="ScrollContainer" unique_id=1655473196]
+layout_mode = 2
+theme_override_constants/h_separation = 170
+theme_override_constants/v_separation = 120
+columns = 5

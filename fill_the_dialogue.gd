@@ -15,6 +15,8 @@ func _ready() -> void:
 	hide()
 
 func _on_event_changed(event_data: Dictionary, phase_data: Dictionary) -> void:
+	if EventManager.current_event_id == 2:
+		return
 	if phase_data.type == "dialogue":
 		show_dialogue(phase_data.lines)
 	elif phase_data.type == "action":
@@ -50,6 +52,8 @@ func _on_next_pressed() -> void:
 	EventManager.advance_phase()
 	
 func _on_temporary_message(text: String, duration: float) -> void:
+	if EventManager.current_event_id == 2:
+		return
 	dialogue_text.text = text
 	show()
 	next_button.hide()

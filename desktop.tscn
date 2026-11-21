@@ -22,6 +22,8 @@
 [ext_resource type="Texture2D" uid="uid://tooar2f42vti" path="res://Sprite-0001.png" id="19_bqlls"]
 [ext_resource type="StyleBox" uid="uid://dq8p2vylg8umu" path="res://ButtonSettings.tres" id="20_vuxbm"]
 [ext_resource type="StyleBox" uid="uid://bfsmkwpe1674l" path="res://button_h_or_p.tres" id="22_sbskp"]
+[ext_resource type="Script" uid="uid://dmy3o8cmleuu8" path="res://phone_interface.gd" id="23_sbskp"]
+[ext_resource type="PackedScene" uid="uid://dipeq2aun65la" path="res://Timer.tscn" id="24_f3oiw"]
 
 [sub_resource type="Image" id="Image_w58xd"]
 data = {
@@ -528,6 +530,16 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("3_vuxbm")
 
+[node name="EvilBackground" type="ColorRect" parent="." unique_id=101958969]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.1749846, 0.17498463, 0.1749846, 1)
+
 [node name="LowerPannel" type="ColorRect" parent="." unique_id=820930472]
 layout_mode = 1
 anchors_preset = 12
@@ -768,15 +780,15 @@ stretch_mode = 2
 [node name="AnimationPlayer" type="AnimationPlayer" parent="SMNTWindow" unique_id=1454947497]
 libraries/ = SubResource("AnimationLibrary_f3oiw")
 
-[node name="TalkWindow" type="Control" parent="." unique_id=1734056452]
+[node name="TalkWindow" type="Control" parent="SMNTWindow" unique_id=1734056452]
 anchors_preset = 0
-offset_left = 956.0
-offset_top = 29.0
-offset_right = 1257.0
-offset_bottom = 376.0
+offset_left = -5.0
+offset_top = -367.0
+offset_right = 296.0
+offset_bottom = -20.0
 script = ExtResource("16_ylx5y")
 
-[node name="TextLabel" type="RichTextLabel" parent="TalkWindow" unique_id=1285203937]
+[node name="TextLabel" type="RichTextLabel" parent="SMNTWindow/TalkWindow" unique_id=1285203937]
 layout_mode = 0
 offset_right = 301.0
 offset_bottom = 347.0
@@ -784,7 +796,7 @@ theme_override_fonts/normal_font = ExtResource("3_cmsrr")
 theme_override_font_sizes/normal_font_size = 20
 theme_override_styles/normal = ExtResource("20_vuxbm")
 
-[node name="Made" type="Button" parent="TalkWindow" unique_id=703214586]
+[node name="Made" type="Button" parent="SMNTWindow/TalkWindow" unique_id=703214586]
 layout_mode = 0
 offset_left = 212.0
 offset_top = 302.0
@@ -798,6 +810,97 @@ theme_override_styles/normal = ExtResource("20_vuxbm")
 theme_override_styles/pressed = ExtResource("22_sbskp")
 theme_override_styles/hover = ExtResource("22_sbskp")
 text = "next"
+
+[node name="PoliceWindow" type="Control" parent="." unique_id=784577959]
+anchors_preset = 0
+offset_left = 961.0
+offset_top = 396.0
+offset_right = 1253.0
+offset_bottom = 638.0
+
+[node name="ColorRect" type="Panel" parent="PoliceWindow" unique_id=1994038898]
+layout_mode = 0
+offset_right = 292.0
+offset_bottom = 242.0
+theme_override_styles/panel = ExtResource("20_vuxbm")
+
+[node name="TextureRect" type="TextureRect" parent="PoliceWindow" unique_id=1621003986]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 21.0
+offset_right = 246.0
+offset_bottom = 221.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+stretch_mode = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="PoliceWindow" unique_id=735198628]
+libraries/ = SubResource("AnimationLibrary_f3oiw")
+
+[node name="TalkWindow" type="Control" parent="PoliceWindow" unique_id=1196627162]
+anchors_preset = 0
+offset_left = -5.0
+offset_top = -367.0
+offset_right = 296.0
+offset_bottom = -20.0
+script = ExtResource("23_sbskp")
+
+[node name="TextLabel" type="RichTextLabel" parent="PoliceWindow/TalkWindow" unique_id=761354352]
+layout_mode = 0
+offset_right = 301.0
+offset_bottom = 347.0
+theme_override_fonts/normal_font = ExtResource("3_cmsrr")
+theme_override_font_sizes/normal_font_size = 20
+theme_override_styles/normal = ExtResource("20_vuxbm")
+
+[node name="Next" type="Button" parent="PoliceWindow/TalkWindow" unique_id=1621881775]
+layout_mode = 0
+offset_left = 210.0
+offset_top = 302.0
+offset_right = 300.0
+offset_bottom = 347.0
+size_flags_horizontal = 8
+size_flags_vertical = 8
+theme_override_fonts/font = ExtResource("3_cmsrr")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = ExtResource("20_vuxbm")
+theme_override_styles/pressed = ExtResource("22_sbskp")
+theme_override_styles/hover = ExtResource("22_sbskp")
+text = "next"
+
+[node name="Answer" type="LineEdit" parent="PoliceWindow/TalkWindow" unique_id=1291225484]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -47.0
+offset_right = 215.0
+offset_bottom = -2.0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("3_cmsrr")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = ExtResource("20_vuxbm")
+text = "Answer"
+alignment = 1
+
+[node name="Send" type="Button" parent="PoliceWindow/TalkWindow" unique_id=2036512613]
+layout_mode = 0
+offset_left = 210.0
+offset_top = 300.0
+offset_right = 300.0
+offset_bottom = 345.0
+theme_override_fonts/font = ExtResource("3_cmsrr")
+theme_override_styles/normal = ExtResource("20_vuxbm")
+theme_override_styles/pressed = ExtResource("22_sbskp")
+theme_override_styles/hover = ExtResource("22_sbskp")
+text = "Send"
+
+[node name="TimerUI" parent="." unique_id=1465431079 instance=ExtResource("24_f3oiw")]
+layout_mode = 1
+offset_left = 961.0
+offset_top = 396.0
+offset_right = 961.0
+offset_bottom = 396.0
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=530239637]
 stream = SubResource("AudioStreamMP3_bqlls")

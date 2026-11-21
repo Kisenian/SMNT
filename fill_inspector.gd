@@ -2,7 +2,7 @@ extends Control
 
 var FileItemScene = preload("res://inspector_item.tscn") 
 
-@onready var files_container = $BoxContainer
+@onready var files_container = $ScrollContainer/BoxContainer
 
 func _ready() -> void:
 	load_files()

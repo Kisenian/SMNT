@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://cpw1kwjsk8ga7"]
+
+[ext_resource type="Script" uid="uid://de5xvg4y2baeb" path="res://ending_scene.gd" id="1_jg538"]
+[ext_resource type="LabelSettings" uid="uid://dhgp01mi0oqnv" path="res://white_labe;.tres" id="2_gwylf"]
+
+[node name="Control" type="Control" unique_id=473936998]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1975542971]
+layout_mode = 0
+offset_right = 1279.0
+offset_bottom = 715.0
+color = Color(0, 0, 0, 1)
+script = ExtResource("1_jg538")
+
+[node name="Label" type="Label" parent="ColorRect" unique_id=1088818288]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -408.5
+offset_top = -99.0
+offset_right = 408.5
+offset_bottom = 99.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Поздравляю! Вы получили хорошую концовку
+Но что конкретно она представляет? Узнаете чуть позже"
+label_settings = ExtResource("2_gwylf")
+horizontal_alignment = 1
+vertical_alignment = 1

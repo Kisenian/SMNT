@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://dipeq2aun65la"]
+
+[ext_resource type="Script" uid="uid://wehnbbl7jlal" path="res://timer_ui.gd" id="1_7jo7d"]
+[ext_resource type="FontFile" uid="uid://brqo5njjq4imd" path="res://Tiny5-Regular.ttf" id="2_2p01c"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h3sn8"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.6501869, 0.15491685, 0.26061815, 1)
+
+[node name="TimerUI" type="Control" unique_id=1465431079]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7jo7d")
+
+[node name="TimeBar" type="ProgressBar" parent="." unique_id=439080517]
+layout_mode = 0
+offset_right = 292.0
+offset_bottom = 33.0
+theme_override_fonts/font = ExtResource("2_2p01c")
+theme_override_styles/background = SubResource("StyleBoxFlat_h3sn8")

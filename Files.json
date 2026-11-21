@@ -1,5 +1,20 @@
 [
-	{"title": "Мой кот!",
-	"path": "res://images/photo1.jpg"
-	},
+{"title": "Меню столовой", "path": "res://texts/menu.txt", "type": "text", "weight": 0, "clue_id": null},
+{"title": "Правила офиса", "path": "res://texts/office_rules.txt", "type": "text", "weight": 0, "clue_id": null},
+{"title": "Премии после инцидентов", "path": "res://texts/bonus_memo.txt", "type": "text", "weight": 1, "clue_id": "doc_bonus"},
+{"title": "Инструкция по принтеру", "path": "res://texts/printer_guide.txt", "type": "text", "weight": 0, "clue_id": null},
+{"title": "Конверт для Марка", "path": "res://texts/birthday.txt", "type": "text", "weight": 0, "clue_id": null},
+{"title": "График воды", "path": "res://texts/water.txt", "type": "text", "weight": 0, "clue_id": null},
+{"title": "Памятка медкабинета", "path": "res://texts/med_memo.txt", "type": "text", "weight": 1, "clue_id": "doc_med"},
+{"title": "Приложение к приказу 114-Ц", "path": "res://texts/shortlist.txt", "type": "text", "weight": 1, "clue_id": "doc_shortlist"},
+{"title": "Правила парковки", "path": "res://texts/parking.txt", "type": "text", "weight": 0, "clue_id": null},
+{"title": "Тимбилдинг 20-го", "path": "res://texts/teambuilding.txt", "type": "text", "weight": 0, "clue_id": null},
+{"title": "Сообщение босса", "path": "res://texts/boss_chat.txt", "type": "text", "weight": 2, "clue_id": "doc_boss"},
+{"title": "Памятка от IT", "path": "res://texts/keyboard.txt", "type": "text", "weight": 0, "clue_id": null},
+{"title": "График отпусков", "path": "res://texts/vacation.txt", "type": "text", "weight": 0, "clue_id": null},
+{"title": "Про кофемашину", "path": "res://texts/coffee.txt", "type": "text", "weight": 0, "clue_id": null},
+{"title": "Записка о камерах", "path": "res://texts/cameras_note.txt", "type": "text", "weight": 2, "clue_id": "doc_cameras"},
+
+
+
 ]
